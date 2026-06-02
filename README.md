@@ -1,4 +1,4 @@
-# [cite_start]Shivansh's Digital Portfolio [cite: 1]
+# Shivansh's Digital Portfolio
 
 Welcome to the repository for my personal portfolio website! I am a final-year B.Tech student  at VIT Bhopal, maintaining an 8.10 CGPA. This portfolio serves as a central hub for my software engineering experience, technical projects, and creative media work. 
 
