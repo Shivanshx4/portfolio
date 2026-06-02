@@ -189,13 +189,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function initProjectsHorizontalTimeline() {
     const trigger = document.getElementById("projects-horizontal-trigger");
     const track = document.getElementById("projects-horizontal-track");
-    const mediaItems = document.querySelectorAll(".project-media-wrap img");
-    const detailItems = document.querySelectorAll(".project-details");
+    const panels = document.querySelectorAll(".project-panel");
 
-    if (!trigger || !track) return;
+    if (!trigger || !track || panels.length === 0) return;
 
     if (window.innerWidth > 1024) {
-      // Calculate scroll duration length
+      // DESKTOP: Horizontal Scroll with Pinned Track
       const scrollLength = track.scrollWidth - window.innerWidth;
 
       // Pin track and translate on X axis
@@ -204,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
           trigger: trigger,
           pin: true,
           start: "top top",
-          end: () => `+=${track.scrollWidth}`,
+          end: () => `+=${scrollLength}`,
           scrub: 1,
           invalidateOnRefresh: true
         }
@@ -215,45 +214,90 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "none"
       });
 
-      // Add detailed vertical parallax overlay offsets inside horizontal panels
-      detailItems.forEach((details, index) => {
-        gsap.fromTo(details, 
-          { yPercent: 15 },
-          {
-            yPercent: -15,
-            ease: "none",
-            scrollTrigger: {
-              trigger: trigger,
-              start: () => `top+=${index * window.innerWidth} top`,
-              end: () => `top+=${(index + 1.5) * window.innerWidth} top`,
-              scrub: true
-            }
-          }
-        );
-      });
+      // Synchronize parallax elements using containerAnimation
+      panels.forEach((panel) => {
+        const details = panel.querySelector(".project-details");
+        const img = panel.querySelector(".project-media-wrap img");
 
-      mediaItems.forEach((media, index) => {
-        gsap.fromTo(media, 
-          { yPercent: -10, scale: 1.05 },
-          {
-            yPercent: 10,
-            scale: 1,
-            ease: "none",
-            scrollTrigger: {
-              trigger: trigger,
-              start: () => `top+=${index * window.innerWidth} top`,
-              end: () => `top+=${(index + 1.5) * window.innerWidth} top`,
-              scrub: true
+        if (details) {
+          gsap.fromTo(details, 
+            { xPercent: 15, opacity: 0.85 },
+            {
+              xPercent: -15,
+              opacity: 1,
+              ease: "none",
+              scrollTrigger: {
+                trigger: panel,
+                containerAnimation: horizontalTimeline,
+                start: "left right",
+                end: "right left",
+                scrub: true
+              }
             }
-          }
-        );
+          );
+        }
+
+        if (img) {
+          gsap.fromTo(img, 
+            { xPercent: -10, scale: 1.06 },
+            {
+              xPercent: 10,
+              scale: 1,
+              ease: "none",
+              scrollTrigger: {
+                trigger: panel,
+                containerAnimation: horizontalTimeline,
+                start: "left right",
+                end: "right left",
+                scrub: true
+              }
+            }
+          );
+        }
       });
 
     } else {
-      // Clean dynamic Y transformations on mobile/tablets
+      // MOBILE & TABLET: Vertical Stack Scroll Animations
+      // Reset track x translation
       gsap.set(track, { x: 0 });
-      detailItems.forEach(el => gsap.set(el, { yPercent: 0 }));
-      mediaItems.forEach(el => gsap.set(el, { yPercent: 0, scale: 1 }));
+
+      panels.forEach((panel) => {
+        const details = panel.querySelector(".project-details");
+        const img = panel.querySelector(".project-media-wrap img");
+
+        // Set default states for clean animation triggers
+        if (details) gsap.set(details, { y: 30, opacity: 0, xPercent: 0 });
+        if (img) gsap.set(img, { scale: 0.96, opacity: 0, xPercent: 0 });
+
+        // Create elegant fade in / slide up as they enter screen vertically
+        if (details) {
+          gsap.to(details, {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: panel,
+              start: "top+=10% bottom",
+              toggleActions: "play none none none"
+            }
+          });
+        }
+
+        if (img) {
+          gsap.to(img, {
+            scale: 1,
+            opacity: 1,
+            duration: 1.0,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: panel,
+              start: "top+=15% bottom",
+              toggleActions: "play none none none"
+            }
+          });
+        }
+      });
     }
   }
 
