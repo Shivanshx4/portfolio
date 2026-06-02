@@ -587,11 +587,10 @@ nav {
   100% { transform: translateX(5px); }
 }
 
-/* Technical Skills Grid Section */
 .skills-section {
   width: 100%;
   background-color: var(--bg-primary);
-  padding: 8rem 3rem 4rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   position: relative;
 }
 
@@ -1132,13 +1131,12 @@ nav {
   background-color: var(--color-accent-teal);
 }
 
-/* Outro & Elegant Footer */
 .outro-section {
   width: 100%;
   background-color: #050508;
   display: flex;
   flex-direction: column;
-  padding: 6rem 3rem 4rem 3rem;
+  padding: 3rem 3rem 4rem 3rem;
   position: relative;
 }
 
@@ -1252,24 +1250,7 @@ nav {
   }
 
   .gallery-wrapper {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    pointer-events: auto;
-  }
-
-  .gallery-item {
-    position: relative;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    width: 100% !important;
-    height: 250px !important;
-    opacity: 0.85;
-    filter: grayscale(0%);
+    display: none !important;
   }
 
   .about-text-pinned {
@@ -1392,13 +1373,28 @@ nav {
     right: 2rem;
   }
 
+  .hero-content {
+    max-width: 95% !important;
+    padding: 0.5rem !important;
+  }
+
+  .hero-title-wrap {
+    overflow: visible !important;
+    padding: 0 4px !important;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 9.8vw, 4.5rem) !important;
+    letter-spacing: -0.02em !important;
+  }
+
   .hero-explore-btn {
     padding: 0.9rem 2rem;
     font-size: 0.85rem;
   }
 
   .skills-section {
-    padding: 6rem 1.5rem;
+    padding: 4rem 1.5rem 1rem 1.5rem !important;
   }
 
   .skill-card {
@@ -1406,7 +1402,7 @@ nav {
   }
 
   .outro-section {
-    padding: 6rem 1.5rem 2rem 1.5rem;
+    padding: 2rem 1.5rem 3rem 1.5rem !important;
   }
 
   .outro-heading {
