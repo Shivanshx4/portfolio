@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#08080c"/>
+  <!-- Circular radar grid in background -->
+  <g stroke="#162024" stroke-width="1">
+    <circle cx="600" cy="300" r="220" fill="none"/>
+    <circle cx="600" cy="300" r="160" fill="none" stroke-dasharray="5,5"/>
+    <circle cx="600" cy="300" r="100" fill="none"/>
+    <circle cx="600" cy="300" r="40" fill="none"/>
+    <line x1="380" y1="300" x2="820" y2="300"/>
+    <line x1="600" y1="80" x2="600" y2="520"/>
+  </g>
+  <!-- Sleek HUD overlay -->
+  <rect x="40" y="40" width="360" height="520" rx="8" fill="#0f0f15" stroke="#1d2833" stroke-width="2"/>
+  <rect x="40" y="40" width="360" height="60" rx="8" fill="#14141d"/>
+  <text x="70" y="78" font-family="sans-serif" font-weight="bold" font-size="18" fill="#00ffa3">ATHLETE BIOMETRICS</text>
+  
+  <!-- Bio Signal chart -->
+  <text x="70" y="140" font-family="monospace" font-size="12" fill="#666677">REAL-TIME EKG (HEART RATE)</text>
+  <!-- ECG Grid -->
+  <rect x="70" y="160" width="300" height="100" rx="4" fill="#0b0b0f" stroke="#1c1c28"/>
+  <g stroke="#1d2d2a" stroke-width="0.5">
+    <path d="M 70,185 H 370 M 70,210 H 370 M 70,235 H 370"/>
+    <path d="M 120,160 V 260 M 170,160 V 260 M 220,160 V 260 M 270,160 V 260 M 320,160 V 260"/>
+  </g>
+  <!-- ECG Curve -->
+  <path d="M 70,210 L 110,210 L 120,175 L 125,245 L 135,210 L 175,210 L 185,175 L 190,245 L 200,210 L 250,210 L 260,165 L 265,255 L 275,210 L 315,210 L 325,175 L 330,245 L 340,210 L 370,210" fill="none" stroke="#00e5ff" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Sleep Quality Prediction -->
+  <text x="70" y="300" font-family="monospace" font-size="12" fill="#666677">SLEEP SCORE PREDICTION (ML)</text>
+  <rect x="70" y="320" width="300" height="30" rx="15" fill="#141420" stroke="#222230"/>
+  <!-- Filled bar -->
+  <rect x="72" y="322" width="260" height="26" rx="13" fill="none" stroke="#00ffa3" stroke-width="2"/>
+  <rect x="72" y="322" width="220" height="26" rx="13" fill="#00ffa3" opacity="0.3"/>
+  <text x="300" y="340" font-family="monospace" font-weight="bold" font-size="12" fill="#00ffa3">84%</text>
+  
+  <!-- Injury Risk -->
+  <text x="70" y="380" font-family="monospace" font-size="12" fill="#666677">INJURY RISK EVALUATION</text>
+  <rect x="70" y="400" width="300" height="120" rx="6" fill="#141420" stroke="#ff5f56" stroke-width="1" opacity="0.8"/>
+  <text x="90" y="435" font-family="sans-serif" font-weight="bold" font-size="16" fill="#ff5f56">LOW RISK</text>
+  <text x="90" y="465" font-family="sans-serif" font-size="12" fill="#888899">Fatigue levels normal. Joint loading balances calculated.</text>
+  <text x="90" y="495" font-family="monospace" font-size="11" fill="#00ffa3">RECOMMENDATION: STRENGTHEN CORRECTION</text>
+  
+  <!-- 3D Human skeletal outline on radar -->
+  <!-- Wireframe skeletal joints -->
+  <g fill="#00ffa3" stroke="#00ffa3" stroke-width="2">
+    <!-- Spine -->
+    <line x1="600" y1="180" x2="600" y2="380" stroke-width="3"/>
+    <!-- Shoulders -->
+    <line x1="530" y1="210" x2="670" y2="210" stroke-width="3"/>
+    <!-- Arms -->
+    <line x1="530" y1="210" x2="500" y2="280"/>
+    <line x1="500" y1="280" x2="480" y2="350"/>
+    <line x1="670" y1="210" x2="700" y2="280"/>
+    <line x1="700" y1="280" x2="720" y2="350"/>
+    <!-- Hips -->
+    <line x1="550" y1="380" x2="650" y2="380" stroke-width="3"/>
+    <!-- Legs -->
+    <line x1="550" y1="380" x2="540" y2="460"/>
+    <line x1="540" y1="460" x2="530" y2="540"/>
+    <line x1="650" y1="380" x2="660" y2="460"/>
+    <line x1="660" y1="460" x2="670" y2="540"/>
+    
+    <!-- Joint nodes -->
+    <circle cx="600" cy="150" r="14" fill="#08080c" stroke="#00e5ff" stroke-width="3"/> <!-- Head -->
+    <circle cx="600" cy="210" r="5"/>
+    <circle cx="530" cy="210" r="5" fill="#00e5ff"/>
+    <circle cx="670" cy="210" r="5" fill="#00e5ff"/>
+    <circle cx="500" cy="280" r="4"/>
+    <circle cx="700" cy="280" r="4"/>
+    <circle cx="600" cy="380" r="5"/>
+    <circle cx="550" cy="380" r="5"/>
+    <circle cx="650" cy="380" r="5"/>
+    <circle cx="540" cy="460" r="4"/>
+    <circle cx="660" cy="460" r="4"/>
+  </g>
+</svg>

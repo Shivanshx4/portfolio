@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 325" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#101014"/>
+  <!-- Subtle circular grid -->
+  <circle cx="115" cy="162" r="100" fill="none" stroke="#22222a" stroke-dasharray="4,4"/>
+  <circle cx="115" cy="162" r="70" fill="none" stroke="#22222a"/>
+  <!-- Floating sine waves -->
+  <path d="M 15,162 C 50,112 70,212 115,162 C 160,112 180,212 215,162" fill="none" stroke="#555566" stroke-width="1.5"/>
+  <path d="M 15,162 C 50,82 70,242 115,162 C 160,82 180,242 215,162" fill="none" stroke="#00ffa3" stroke-width="2" opacity="0.6"/>
+  <path d="M 15,162 C 50,142 70,182 115,162 C 160,142 180,182 215,162" fill="none" stroke="#333344" stroke-width="1"/>
+  <!-- Intersecting points -->
+  <circle cx="115" cy="162" r="5" fill="#00ffa3"/>
+  <circle cx="65" cy="142" r="3" fill="#555566"/>
+  <circle cx="165" cy="182" r="3" fill="#555566"/>
+  <!-- Mono typography details -->
+  <text x="20" y="35" font-family="monospace" font-size="9" fill="#555566">SIGNAL: WAVE_ML_INPUT</text>
+  <text x="20" y="300" font-family="monospace" font-size="9" fill="#555566">FREQ: 842.11 MHz</text>
+</svg>

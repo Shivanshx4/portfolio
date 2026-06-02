@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#121216"/>
+  <!-- Grid lines -->
+  <g stroke="#33333e" stroke-width="1" opacity="0.6">
+    <path d="M 0,50 L 400,50 M 0,100 L 400,100 M 0,150 L 400,150 M 0,200 L 400,200 M 0,250 L 400,250 M 0,300 L 400,300 M 0,350 L 400,350"/>
+    <path d="M 50,0 L 50,400 M 100,0 L 100,400 M 150,0 L 150,400 M 200,0 L 200,400 M 250,0 L 250,400 M 300,0 L 300,400 M 350,0 L 350,400"/>
+  </g>
+  <!-- Isometric structures -->
+  <g fill="none" stroke="#666677" stroke-width="1.5">
+    <!-- Center cube -->
+    <path d="M 200,150 L 250,180 L 250,240 L 200,210 Z" fill="#181822" opacity="0.8"/>
+    <path d="M 200,150 L 150,180 L 150,240 L 200,210 Z" fill="#1e1e2c" opacity="0.8"/>
+    <path d="M 200,150 L 250,120 L 200,90 L 150,120 Z" fill="#242436" opacity="0.8"/>
+    
+    <!-- Echo lines -->
+    <path d="M 200,210 L 200,320" stroke="#00e5ff" stroke-width="2" opacity="0.8"/>
+    <circle cx="200" cy="320" r="4" fill="#00e5ff"/>
+    <circle cx="200" cy="90" r="3" fill="#666677"/>
+  </g>
+  <!-- Technical labels -->
+  <text x="20" y="30" font-family="monospace" font-size="10" fill="#666677">SYS.LOC: VIT.BHOPAL</text>
+  <text x="20" y="380" font-family="monospace" font-size="10" fill="#666677">CUBE_COORDS: [x88, y19, z42]</text>
+  <text x="310" y="30" font-family="monospace" font-size="10" fill="#00ffa3">STATUS: ACT</text>
+</svg>

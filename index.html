@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivansh | Full-Stack & Machine Learning Developer</title>
+  <meta name="description" content="Portfolio of Shivansh, a final-year B.Tech student specializing in Full-Stack Development and Machine Learning, skilled in React, FastAPI, TensorFlow, Node.js, and MongoDB.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Minimalist Fixed Header Navigation -->
+  <header>
+    <a href="#" class="logo">Shivansh<span>.</span></a>
+    <nav>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="mailto:shivanshchowdhary04@gmail.com" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Giant Staggered Curtain Grid Preloader -->
+  <div class="preloader">
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+    <div class="curtain-bar"></div>
+  </div>
+  <h1 class="preloader-counter" id="preloader-num">00<span>%</span></h1>
+
+  <!-- Hero Landing Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow-sphere"></div>
+    <div class="hero-content">
+      <div class="hero-title-wrap">
+        <h1 class="hero-title">SHIV<span>ANSH</span></h1>
+      </div>
+      <div class="hero-subtitle">Full-Stack &amp; ML Developer</div>
+      <p class="hero-meta-summary">
+        I build high-performance, data-driven systems, design optimized RESTful APIs, and deploy advanced machine learning pipelines that solve complex, real-world problems.
+      </p>
+      <button class="hero-explore-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+        Discover My Work
+      </button>
+    </div>
+  </section>
+
+  <!-- Pinned About & Floating Gallery Section -->
+  <section class="about-section" id="about">
+    <!-- Pinned Center Text Cards -->
+    <div class="about-text-pinned" id="about-pinned-trigger">
+      <!-- Card 1: Overview -->
+      <div class="about-text-card" id="about-card-1">
+        <span class="about-card-tag">( 01 / Overview )</span>
+        <h2>About Me</h2>
+        <p>
+          I am a final-year B.Tech student specializing in Full-Stack Development and Machine Learning. With hands-on experience building scalable AI-driven web architectures, I design systems with high efficiency, clean code quality, and peak database performance.
+        </p>
+      </div>
+
+      <!-- Card 2: Vit Education -->
+      <div class="about-text-card" id="about-card-2">
+        <span class="about-card-tag">( 02 / Education )</span>
+        <h2>Academic Foundations</h2>
+        <p>
+          Pursuing a **Bachelor of Technology (B.Tech)** at **Vellore Institute of Technology, Bhopal** (CGPA: 8.02/10.0, Class of 2026). My specialized coursework includes Machine Learning, Database Management Systems, Data Structures &amp; Algorithms, and Web Development.
+        </p>
+      </div>
+
+      <!-- Card 3: Intern Experience -->
+      <div class="about-text-card" id="about-card-3">
+        <span class="about-card-tag">( 03 / Professional Experience )</span>
+        <h2>TechBrill Solutions</h2>
+        <p>
+          As a Full-Stack Developer Intern (June 2025), I developed and deployed company web solutions using **React.js, Node.js, and MongoDB** serving 500+ active users. I optimized backend APIs to boost throughput by 15% and helped lead Agile sprints.
+        </p>
+      </div>
+
+      <!-- Card 4: ML and AI Focus -->
+      <div class="about-text-card" id="about-card-4">
+        <span class="about-card-tag">( 04 / Core Philosophy )</span>
+        <h2>Machine Learning &amp; AI</h2>
+        <p>
+          I bridge the gap between complex artificial intelligence pipelines and seamless frontend interfaces. By deploying models via lightweight frameworks (FastAPI) and utilizing cloud architectures (AWS/Firebase), I create intelligent, responsive user experiences.
+        </p>
+      </div>
+    </div>
+
+    <!-- Parallax Floating desaturated SVG cards -->
+    <div class="gallery-wrapper">
+      <div class="gallery-item" id="gi-1">
+        <img src="assets/about_g1.svg" alt="Isometric coordinate grid representation">
+      </div>
+      <div class="gallery-item" id="gi-2">
+        <img src="assets/about_g2.svg" alt="Neural frequency signal waveform representation">
+      </div>
+      <div class="gallery-item" id="gi-3">
+        <img src="assets/about_g3.svg" alt="Digital HUD telemetry display target representation">
+      </div>
+      <div class="gallery-item" id="gi-4">
+        <img src="assets/about_g4.svg" alt="Code lines and IDE window mockup">
+      </div>
+      <div class="gallery-item" id="gi-5">
+        <img src="assets/about_g5.svg" alt="Polynomial chart and scatter plot coordinate graph">
+      </div>
+      <div class="gallery-item" id="gi-6">
+        <img src="assets/about_g6.svg" alt="Neural network connection node architecture model">
+      </div>
+      <div class="gallery-item" id="gi-7">
+        <img src="assets/about_g7.svg" alt="Perspective wireframe horizon space projection">
+      </div>
+    </div>
+  </section>
+
+  <!-- Horizontal Scroll Projects Showcase -->
+  <section class="projects-section" id="projects">
+    <h2 class="projects-section-title">Selected <span>Projects</span></h2>
+    
+    <div class="horizontal-container" id="projects-horizontal-trigger">
+      <div class="horizontal-wrapper" id="projects-horizontal-track">
+        
+        <!-- Project 1: TechBrill Website -->
+        <div class="project-panel">
+          <div class="project-panel-full">
+            <div class="project-details">
+              <span class="project-index">( 01 )</span>
+              <h3 class="project-title">TechBrill Solutions Website</h3>
+              <p class="project-description">
+                Developed and optimized the official company website during my internship. Built high-fidelity interactive components, optimized layout performance, and successfully integrated client outreach triggers.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">GSAP</span>
+                <span class="project-tag">SEO Audit</span>
+              </div>
+              <div class="project-links">
+                <a href="http://techbrillsolutions.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  Visit Live Site &#x2197;
+                </a>
+              </div>
+            </div>
+            <div class="project-media-wrap">
+              <img src="assets/project_p1.svg" alt="TechBrill Solutions browser interface mockup">
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AI Athlete System -->
+        <div class="project-panel">
+          <div class="project-panel-full">
+            <div class="project-details">
+              <span class="project-index">( 02 )</span>
+              <h3 class="project-title">AI-Driven Athlete Analyzer</h3>
+              <p class="project-description">
+                An end-to-end AI fitness and recommendation dashboard. Ingests biometric smartwatch indicators to run machine learning models that predict sleep quality score and evaluate muscle injury risk thresholds.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">React.js</span>
+                <span class="project-tag">Firebase Auth</span>
+                <span class="project-tag">Scikit-learn</span>
+                <span class="project-tag">Biometrics</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link-btn" style="color: var(--color-text-muted);">Secure Enterprise Pipeline</span>
+              </div>
+            </div>
+            <div class="project-media-wrap">
+              <img src="assets/project_p2.svg" alt="Biometrics and EKG athlete analysis dashboard">
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Crime Detection System -->
+        <div class="project-panel">
+          <div class="project-panel-full">
+            <div class="project-details">
+              <span class="project-index">( 03 )</span>
+              <h3 class="project-title">Crime Spot Hotspot Predictor</h3>
+              <p class="project-description">
+                A predictive analytics platform mapping urban crime hotspots with 85% accuracy. Trained on historical spatial datasets to deploy dynamic vector map coordinates and visual trend forecasting grids.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python ML</span>
+                <span class="project-tag">Scikit-learn</span>
+                <span class="project-tag">Pandas</span>
+                <span class="project-tag">Data Visualization</span>
+                <span class="project-tag">Map coordinates</span>
+              </div>
+              <div class="project-links">
+                <span class="project-link-btn" style="color: var(--color-text-muted);">Predictive Hotspots</span>
+              </div>
+            </div>
+            <div class="project-media-wrap">
+              <img src="assets/project_p3.svg" alt="Predictive hotspots topological crime analytics dashboard">
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll Transition Outro Box -->
+        <div class="project-panel-outro">
+          <div class="project-outro-box">
+            <h3 class="project-outro-title">Let's build something amazing together</h3>
+            <span class="project-outro-arrow">&#x2192;</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills & Capabilities Section -->
+  <section class="skills-section" id="skills">
+    <div class="skills-glow"></div>
+    <div class="skills-header">
+      <div class="skills-header-left">
+        <h2 class="skills-title">Technical <span>Capabilities</span></h2>
+        <p class="skills-intro">
+          A deep, modular framework of specialized tools that I leverage daily to develop robust, modern full-stack websites and machine learning applications.
+        </p>
+      </div>
+      
+      <!-- Premium Interactive ML Prediction Sandbox -->
+      <div class="skills-sandbox-widget">
+        <div class="sandbox-header">
+          <div class="sandbox-title-wrap">
+            <span class="sandbox-glow-dot"></span>
+            <span class="sandbox-title">NEURAL ENGINE PLAYGROUND</span>
+          </div>
+          <span class="sandbox-status-badge" id="sandbox-status">MODEL STATE: READY</span>
+        </div>
+
+        <!-- Model Selection Tabs -->
+        <div class="sandbox-tabs">
+          <button class="sandbox-tab-btn active" id="tab-athlete" data-model="athlete">Athlete Analyzer</button>
+          <button class="sandbox-tab-btn" id="tab-crime" data-model="crime">Hotspot Predictor</button>
+        </div>
+
+        <!-- Inputs / Sliders -->
+        <div class="sandbox-params">
+          <div class="param-row">
+            <div class="param-info">
+              <span class="param-label" id="label-slider-1">Biometric Load (Strain)</span>
+              <span class="param-value" id="val-slider-1">50%</span>
+            </div>
+            <input type="range" min="10" max="100" value="50" class="sandbox-slider" id="slider-1">
+          </div>
+          
+          <div class="param-row">
+            <div class="param-info">
+              <span class="param-label" id="label-slider-2">Sleep Recovery (Hours)</span>
+              <span class="param-value" id="val-slider-2">7.0h</span>
+            </div>
+            <input type="range" min="2" max="12" step="0.5" value="7.0" class="sandbox-slider" id="slider-2">
+          </div>
+        </div>
+
+        <!-- Action Trigger -->
+        <button class="sandbox-action-btn" id="btn-run-inference">
+          <span>RUN MODEL INFERENCE</span>
+          <svg class="btn-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Dynamic Visualization Grid -->
+        <div class="sandbox-vis-grid">
+          <!-- Live Glowing Neural network SVG -->
+          <div class="sandbox-svg-container">
+            <svg viewBox="0 0 200 100" class="sandbox-net-svg" id="net-svg">
+              <!-- Grid lines -->
+              <g stroke="rgba(255, 255, 255, 0.02)" stroke-width="0.5">
+                <line x1="0" y1="50" x2="200" y2="50" />
+                <line x1="100" y1="0" x2="100" y2="100" />
+              </g>
+              
+              <!-- Connection Lines -->
+              <g stroke="#1a1d24" stroke-width="1.2">
+                <line x1="30" y1="25" x2="100" y2="20" class="net-line l1" id="line-l1" />
+                <line x1="30" y1="25" x2="100" y2="50" class="net-line l2" id="line-l2" />
+                <line x1="30" y1="75" x2="100" y2="50" class="net-line l3" id="line-l3" />
+                <line x1="30" y1="75" x2="100" y2="80" class="net-line l4" id="line-l4" />
+                
+                <line x1="100" y1="20" x2="170" y2="50" class="net-line l5" id="line-l5" />
+                <line x1="100" y1="50" x2="170" y2="50" class="net-line l6" id="line-l6" />
+                <line x1="100" y1="80" x2="170" y2="50" class="net-line l7" id="line-l7" />
+              </g>
+              
+              <!-- Nodes -->
+              <!-- Input Layer -->
+              <circle cx="30" cy="25" r="4.5" class="net-node n-in" id="node-in-1" />
+              <circle cx="30" cy="75" r="4.5" class="net-node n-in" id="node-in-2" />
+              
+              <!-- Hidden Layer -->
+              <circle cx="100" cy="20" r="4.5" class="net-node n-hid" id="node-hid-1" />
+              <circle cx="100" cy="50" r="4.5" class="net-node n-hid" id="node-hid-2" />
+              <circle cx="100" cy="80" r="4.5" class="net-node n-hid" id="node-hid-3" />
+              
+              <!-- Output Layer -->
+              <circle cx="170" cy="50" r="6.5" class="net-node n-out" id="node-out" />
+            </svg>
+          </div>
+
+          <!-- Dynamic Output readout -->
+          <div class="sandbox-readout">
+            <div class="confidence-wrap">
+              <span class="readout-label">CONFIDENCE</span>
+              <span class="confidence-val" id="val-confidence">0.0%</span>
+              <div class="confidence-bar-bg">
+                <div class="confidence-bar-fill" id="bar-confidence"></div>
+              </div>
+            </div>
+            
+            <div class="result-outcome-wrap">
+              <span class="readout-label">CLASSIFICATION</span>
+              <div class="result-badge" id="badge-outcome">AWAITING TRIGGER</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal System Logs -->
+        <div class="sandbox-console">
+          <div class="console-line-wrap" id="console-logs">
+            <div class="console-line">[SYS] Ready. Select model &amp; run inference trigger...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Card 1: Languages -->
+      <div class="skill-card">
+        <span class="skill-card-icon">( Languages )</span>
+        <h3 class="skill-card-title">Core Development</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-bullet"></span>Python (ML/FastAPI)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>JavaScript (React/Node)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>C++ (Data Structures)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>SQL (Relational databases)</div>
+        </div>
+      </div>
+
+      <!-- Card 2: Frameworks -->
+      <div class="skill-card">
+        <span class="skill-card-icon">( Frameworks &amp; Tools )</span>
+        <h3 class="skill-card-title">Web Architecture</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-bullet"></span>React.js (SPAs / Hooks)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>Node.js &amp; Express.js</div>
+          <div class="skill-item"><span class="skill-bullet"></span>FastAPI (Async APIs)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>RESTful API Design &amp; Optimization</div>
+        </div>
+      </div>
+
+      <!-- Card 3: Databases -->
+      <div class="skill-card">
+        <span class="skill-card-icon">( Databases &amp; Cloud )</span>
+        <h3 class="skill-card-title">Data &amp; Operations</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-bullet"></span>MongoDB (NoSQL GridFS)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>PostgreSQL (SQL queries)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>Firebase (Auth / Database)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>AWS &amp; Git / GitHub</div>
+        </div>
+      </div>
+
+      <!-- Card 4: Machine Learning -->
+      <div class="skill-card">
+        <span class="skill-card-icon">( Machine Learning )</span>
+        <h3 class="skill-card-title">Artificial Intelligence</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-bullet"></span>TensorFlow &amp; PyTorch</div>
+          <div class="skill-item"><span class="skill-bullet"></span>Scikit-learn (Hotspots / Linear models)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>NLP (spaCy)</div>
+          <div class="skill-item"><span class="skill-bullet"></span>Whisper AI &amp; GPT API Pipelines</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Elegant Outro & Footer -->
+  <section class="outro-section" id="contact">
+    <div class="outro-content">
+      <span class="outro-tagline">I turn vision into velocity.</span>
+      <h2 class="outro-heading">Let's Connect <span>( Shivansh )</span></h2>
+      <div class="outro-btn-wrap">
+        <a href="mailto:shivanshchowdhary04@gmail.com" class="outro-contact-btn">Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- Minimalist Footer Navigation -->
+    <div class="footer-nav">
+      <div class="footer-credits">
+        &copy; 2026 Shivansh. All rights reserved.
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn</a>
+        <span class="footer-social-link">Tel: +91 8006034000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Load high-performance CDNs for animations & smooth scrolling -->
+  <!-- GSAP Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis Momentum Scroll Engine -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- Local Orchestration Core -->
+  <script src="main.js"></script>
+</body>
+</html>

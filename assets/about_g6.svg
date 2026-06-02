@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#121216"/>
+  <!-- Connections (Lines) -->
+  <g stroke="#333344" stroke-width="1.5" opacity="0.8">
+    <!-- Input to Hidden 1 -->
+    <line x1="50" y1="90" x2="150" y2="60"/>
+    <line x1="50" y1="90" x2="150" y2="150"/>
+    <line x1="50" y1="150" x2="150" y2="60"/>
+    <line x1="50" y1="150" x2="150" y2="150"/>
+    <line x1="50" y1="150" x2="150" y2="240"/>
+    <line x1="50" y1="210" x2="150" y2="150"/>
+    <line x1="50" y1="210" x2="150" y2="240"/>
+    
+    <!-- Hidden 1 to Output -->
+    <line x1="150" y1="60" x2="250" y2="105"/>
+    <line x1="150" y1="60" x2="250" y2="195"/>
+    <line x1="150" y1="150" x2="250" y2="105"/>
+    <line x1="150" y1="150" x2="250" y2="195"/>
+    <line x1="150" y1="240" x2="250" y2="195"/>
+  </g>
+  <!-- Cyber highlights (Active pulses) -->
+  <g stroke="#00e5ff" stroke-width="2" opacity="0.6">
+    <line x1="50" y1="150" x2="150" y2="150"/>
+    <line x1="150" y1="150" x2="250" y2="195" stroke="#00ffa3"/>
+  </g>
+  <!-- Nodes (Circles) -->
+  <!-- Input Nodes -->
+  <circle cx="50" cy="90" r="8" fill="#181822" stroke="#444455" stroke-width="2"/>
+  <circle cx="50" cy="150" r="8" fill="#181822" stroke="#00e5ff" stroke-width="2"/>
+  <circle cx="50" cy="210" r="8" fill="#181822" stroke="#444455" stroke-width="2"/>
+  
+  <!-- Hidden Nodes -->
+  <circle cx="150" cy="60" r="8" fill="#181822" stroke="#444455" stroke-width="2"/>
+  <circle cx="150" cy="150" r="8" fill="#181822" stroke="#00e5ff" stroke-width="2"/>
+  <circle cx="150" cy="240" r="8" fill="#181822" stroke="#444455" stroke-width="2"/>
+  
+  <!-- Output Nodes -->
+  <circle cx="250" cy="105" r="8" fill="#181822" stroke="#444455" stroke-width="2"/>
+  <circle cx="250" cy="195" r="8" fill="#181822" stroke="#00ffa3" stroke-width="2"/>
+  
+  <!-- Text descriptors -->
+  <text x="20" y="30" font-family="monospace" font-size="9" fill="#555566">NEURAL_NET_LAYER: [3, 3, 2]</text>
+  <text x="180" y="280" font-family="monospace" font-size="9" fill="#00ffa3">MODEL: DEEP_LEARN</text>
+</svg>
